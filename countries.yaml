@@ -1,0 +1,18 @@
+openapi: 3.0.1
+info:
+  title: RestCountries
+  description: Shows all the country information
+  version: '0.1'
+servers:
+  - url: 'https://restcountries.com'
+paths:
+  /v2/all:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+      servers:
+        - url: 'https://restcountries.com'
+    servers:
+      - url: 'https://restcountries.com'
