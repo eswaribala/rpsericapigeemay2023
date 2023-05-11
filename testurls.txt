@@ -1,1 +1,3 @@
 https://httpbin.org/get
+https://mocktarget.apigee.net/xml
+https://restcountries.com/v2/all
