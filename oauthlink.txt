@@ -1,0 +1,1 @@
+https://github.com/apigee/api-platform-samples/blob/master/default-proxies/oauth/oauth.zip?raw=true
