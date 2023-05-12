@@ -1,1 +1,4 @@
 https://github.com/apigee/api-platform-samples.git
+
+zip apiproxy-bundle.zip -r apiproxy -x \*.\*~
+
