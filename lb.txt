@@ -1,0 +1,33 @@
+<HTTPTargetConnection>
+    <LoadBalancer>
+      <Algorithm>RoundRobin</Algorithm>
+      <Server name="target-server1"/>
+      <Server name="target-server2"/>
+      <MaxFailures>5</MaxFailures>
+      <ServerUnhealthyResponse>
+        <ResponseCode>500</ResponseCode>
+        <ResponseCode>502</ResponseCode>
+        <ResponseCode>503</ResponseCode>
+      </ServerUnhealthyResponse>
+    </LoadBalancer>
+    <Path>/test</Path>
+    <HealthMonitor>
+      <IsEnabled>true</IsEnabled>
+      <IntervalInSec>5</IntervalInSec>
+      <HTTPMonitor>
+        <Request>
+          <ConnectTimeoutInSec>10</ConnectTimeoutInSec>
+          <SocketReadTimeoutInSec>30</SocketReadTimeoutInSec>
+          <Port>80</Port>
+          <Verb>GET</Verb>
+          <Path>/healthcheck</Path>
+          <Header name="Authorization">Basic 12e98yfw87etf</Header>
+          <IncludeHealthCheckIdHeader>true</IncludeHealthCheckIdHeader>
+        </Request>
+        <SuccessResponse>
+          <ResponseCode>200</ResponseCode>
+          <Header name="ImOK">YourOK</Header>
+        </SuccessResponse>
+      </HTTPMonitor>
+    </HealthMonitor>
+  </HTTPTargetConnection>
