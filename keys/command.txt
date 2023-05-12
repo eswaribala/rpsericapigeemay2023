@@ -1,0 +1,9 @@
+node loadPemIntoKvm.js -u vebconsulting2019@gmail.com -p ****** -v -o vebconsulting2019-eval -e test -m kvmsecret -F private-encrypted-rsa-des3.pem -N testkey
+
+node loadPemIntoKvm.js -u parameswaribala@gmail.com -p viki@dec95 -v -o cloudlabs-demo-eval -e dev -m kvmsecret -F private-encrypted-rsa-des3.pem -N testkey
+
+node loadPemIntoKvm.js -o cloudlabs-demo-eval -e dev -m myKvmMap -F  private-encrypted-rsa-des3.pem -N keyvalue -u parameswaribala@gmail.com -M https://34.160.47.88.nip.io -T
+
+---------------------------
+Generate jwt token
+curl -i http://vebconsulting2019-eval-test.apigee.net/createjwttoken -X POST -d 'subject=apigee-seattle-hatrack-montage&audience=urn://c60511c0-12a2-473c-80fd-42528eb65a6a<'

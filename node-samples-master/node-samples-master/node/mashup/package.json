@@ -1,0 +1,11 @@
+{
+  "name": "mashup",
+  "version": "0.0.0",
+  "description": "Geocoding mashup",
+  "main": "server.js",
+  "private": true,
+  "dependencies": {
+    "request": "2.x.x"
+  }
+}
+
