@@ -1,1 +1,1 @@
-https://34.111.96.88.nip.io/oauth/client_credential/accesstoken?grant_type=client_credentials
+https://34.160.47.88.nip.io/oauth/client_credential/accesstoken?grant_type=client_credentials
